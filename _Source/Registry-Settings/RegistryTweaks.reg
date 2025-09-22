@@ -1,0 +1,637 @@
+Windows Registry Editor Version 5.00
+
+;No Recent Docs History - не сохранять историю файлов и документов
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoRecentDocsHistory"=dword:00000001
+"ClearRecentDocsOnExit"=dword:00000001
+;Remove Setting Internet Explorer
+;Насторойки меню браузера Internet Explorer 8
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\CommandBar]
+;Не отображать Командную строку
+"CommandBarEnabled"=-
+;Не отображать кнопку совместимости
+"ShowCompatibilityViewButton"=-
+
+;Параметры проверки цифровой подписи программ
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Download]
+;Не проверять цифровую подпись загружаемых программ
+"CheckExeSignatures"=-
+;Запускать программы с непроверенной цифровой подписью
+"RunInvalidSignatures"=-
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\LinksBar]
+;Не отображать Панель избранного
+"Enabled"=-
+
+;Дополнительные настройки Internet Explorer 8
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+;Не выполнять поиск из адресной строки
+"AutoSearch"=-
+;Не предлагать Internet Explorer использовать по умолчанию
+"Check_Associations"=-
+;Запретить сторонние расширения обозревателя
+"Enable Browser Extensions"=-
+;Время завершения настройки
+"IE8RunOnceCompletionTime"=-
+;Браузер IE8 уже запускался
+"IE8RunOnceLastShown"=-
+;Время пследнего запуска
+"IE8RunOnceLastShown_TIMESTAMP"=-
+;Предварительная настройка IE8 выполнена
+"IE8RunOncePerInstallCompleted"=-
+;Тур знакомства с IE8 пройден
+"IE8TourShown"=-
+;Время показа тура знакомства с IE8
+"IE8TourShownTime"=-
+;Отключить уведомление по окончании загрузки файла
+"NotifyDownloadComplete"=-
+;Убрать эффект затемнения при переходе с одной страницы на другую
+"Page_Transitions"=-
+;Пустая страница по умолчанию в Internet Explorer
+"Start Page"=-
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN]
+;Разрешить запуск активного содержимого файлов на моем компьютере
+"iexplore.exe"=-
+
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN\Settings]
+;Разрешить запуск активного содержимого компакт-дисков на моем компьютере
+"LOCALMACHINE_CD_UNLOCK"=-
+
+; AlwaysUnloadDll Enable
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"AlwaysUnloadDLL"=dword:00000001
+
+; ###############################################################################################################################
+[HKEY_CURRENT_USER\Software\Microsoft\MediaPlayer\Preferences]
+; Дополнительные настройки Windows Media Player 12
+; Принять лицензионное соглашение
+"AcceptedPrivacyStatement"=dword:00000001
+; Не добавлять файлы видео, найденные в библиотеке изображений
+"AddVideosFromPicturesLibrary"=dword:00000000
+; Отключить автоматическое добавление музыки в библиотеку
+"AutoAddMusicToLibrary"=dword:00000000
+; Не удалять файлы с компьютера при удалении из библиотеки
+"DeleteRemovesFromComputer"=dword:00000000
+; Запретить автоматическую проверку лицензий защищённых файлов
+"DisableLicenseRefresh"=dword:00000001
+; Проигрыватель уже запускался
+"FirstRun"=dword:00000000
+; Не сохранять оценки в файлах мультимедиа
+"FlushRatingsToFiles"=dword:00000000
+; Не спрашивать о воспроизведении с веб-страницы
+"HTMLViewAsk"=dword:00000000
+; Не обновлять содержимое библиотеки при первом запуске
+"LibraryHasBeenRun"=dword:00000001
+; Не показывать сведения о мультимедиа из Интернета и не обновлять файлы
+"MetadataRetrieval"=dword:00000000
+; Отключить загрузку лицензий на использование файлов мультимедиа
+"SilentAcquisition"=dword:00000000
+; Увеличить время запроса автоматического обновления проигрывателя
+"UpgradeCheckFrequency"=dword:00000002
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+; Дополнительные настройки проводника
+; Не добавлять "- Ярлык" для создаваемых ярлыков
+"link"=hex:00,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+; Расширенные настройки проводника и меню "Пуск"
+; Показывать скрытые файлы, папки и диски
+"Hidden"=dword:00000001
+
+; Показывать расширения для зарегистрированных типов файлов
+"HideFileExt"=dword:00000000
+; Не выделять недавно установленные программы
+"Start_NotifyNewApps"=dword:00000000
+; Не отображать "Документы"
+"Start_ShowMyDocs"=dword:00000000
+; Не отображать "Музыка"
+"Start_ShowMyMusic"=dword:00000000
+; Не отображать "Изображения"
+"Start_ShowMyPics"=dword:00000000
+; Не отображать "Подключение к"
+"Start_ShowNetConn"=dword:00000000
+"ShowSyncProviderNotifications"=dword:00000000  ; Отключает уведомления от провайдеров синхронизации
+"Start_TrackProgs"=dword:00000000 ; Отключает отслеживание программ в меню "Пуск"
+"ShowSyncProviderNotifications"=dword:00000000 ; Отключает уведомления от синхронизации
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Serialize]
+"Startupdelayinmsec"=dword:00000000 ; Устанавливает задержку запуска в миллисекундах на 0
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\EventHandlersDefaultSelection]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\UserChosenExecuteHandlers]
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+; Настройка дополнительных параметров Интернета
+; Запретить встроенную проверку подлинности Windows
+"EnableNegotiate"=dword:00000000
+; Отключить предупреждение о несоответствии сертификата
+"WarnonBadCertRecving"=dword:00000000
+; Отключить предупреждение о переходе в локальную зону
+"WarnOnIntranet"=dword:00000000
+; Отключить предупреждение о перенаправления публикаций
+"WarnOnPostRedirect"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Associations]
+; Список "безопасных" типов файлов для загрузки из интернета
+"LowRiskFileTypes"=".zip;.rar;.nfo;.txt;.exe;.bat;.com;.cmd;.reg;.msi;.htm;.html;.gif;.bmp;.jpg;.avi;.mpg;.mpeg;.mov;.mp3;.m3u;.wav;"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments]
+; Отключить предупреждение при открытии файлов, загруженных из Интернета
+"SaveZoneInformation"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+; Отключить значок "Центр поддержки" из области уведомлений
+"HideSCAHealth"=dword:00000001
+; Отключить автозапуск всех устройств, кроме CD-привода
+"NoDriveTypeAutoRun"=dword:000000dd
+; Убрать ярлык "Программы по умолчанию" из меню Пуск
+"NoSMConfigurePrograms"=dword:00000001
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace\{863aa9fd-42df-457b-8e4d-0de1b8015c60}]
+; Не сканировать сеть на наличие сетевых принтеров
+; Настройка контроля учётных записей
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+; Выполнение программ Администратором без запроса
+"ConsentPromptBehaviorAdmin"=dword:00000000
+; Отключить контроль учётных записей (UAC)
+"EnableLUA"=dword:00000000
+"EnableVirtualization"=dword:00000000
+; Не спрашивать при запуске приложений
+"PromptOnSecureDesktop"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\ScriptedDiagnosticsProvider\Policy]
+; Не обращаться к средствам устранения неполадок через интернет
+"EnableQueryRemoteServer"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting]
+; Запретить отправку отчёта об ошибках
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\CrawlScopeManager\Windows\SystemIndex\WorkingSetRules\16]
+; Не индексировать автономные файлы
+"Include"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\CrawlScopeManager\Windows\SystemIndex\WorkingSetRules\17]
+; Не индексировать историю IE8
+"Include"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+; Поведение в случае отказа системы (BSOD)
+; Выполнять автоматическую перезагрузку
+"AutoReboot"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance]
+; Параметры Удалённого помощника
+; Запретить удалённое управление этим компьютером
+"fAllowFullControl"=dword:00000000
+; Запретить подключения удалённого помощника к этому компьютеру
+"fAllowToGetHelp"=dword:00000000
+; Относиться к отключение удаленного помошника
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Terminal Services]
+"fDenyTSConnections"=dword:00000001
+"fAllowUnsolicitedFullControl"=dword:00000000
+"fAllowUnsolicited"=dword:00000000
+"fAllowToGetHelp"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CSC]
+; Отключить драйвер автономных файлов
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CscService]
+; Отключить службу автономных файлов
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinDefend]
+; Отключить службу Защитник Windows
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
+; Отключить службу Центр обеспечения безопасности
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000  ; Отключает поиск драйверов в Windows Update
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001  ; Исключает драйверы из обновлений качества Windows
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001  ; Отключает ограничение мощности для приложений
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000000  ; Отключает режим гибернации
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000  ; Отключает ускоренный запуск (гибернация при загрузке)
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"ClearPageFileAtShutdown"=dword:00000000  ; Не очищает файл подкачки при завершении работы
+"LargeSystemCache"=dword:00000001  ; Включает использование большого системного кэша
+"DisablePagingExecutive"=dword:00000001  ; Отключает разбиение на страницы для системных процессов
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026  ; Устанавливает приоритеты для процессов Windows
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000064  ; Устанавливает отзывчивость системы для мультимедиа
+"LazyModeTimeout"=dword:00002710  ; Устанавливает тайм-аут для режима ожидания
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\GTA5.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003  ; Устанавливает приоритет CPU для игры GTA5
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableVirtualization"=dword:00000000  ; Отключает виртуализацию
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\AppCompat]
+"DisableUAR"=dword:00000001  ; Отключает улучшенный режим совместимости приложений
+"DisableInventory"=dword:00000001  ; Отключает инвентаризацию приложений
+"AITEnable"=dword:00000000  ; Отключает автоматическое улучшение совместимости
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection]
+"AllowTelemetry"=dword:00000000  ; Отключает сбор телеметрии
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search]
+"AllowCortana"=dword:00000000  ; Отключает Cortana
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient\Windows]
+"CEIPEnable"=dword:00000000  ; Отключает программу улучшения качества обслуживания (CEIP)
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\SQMClient]
+"CorporateSQMURL"="127.0.0.1"  ; Устанавливает URL для корпоративного SQM на локальный адрес
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Steps-Recorder]
+"Enabled"=dword:00000000  ; Отключает запись шагов приложения
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Program-Telemetry]
+"Enabled"=dword:00000000  ; Отключает телеметрию программ
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Program-Inventory]
+"Enabled"=dword:00000000  ; Отключает инвентаризацию программ
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Program-Compatibility-Troubleshooter]
+"Enabled"=dword:00000000  ; Отключает средство устранения неполадок совместимости программ
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant]
+"Enabled"=dword:00000000  ; Отключает помощник по совместимости программ
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Trace]
+"Enabled"=dword:00000000  ; Отключает трассировку помощника по совместимости
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Compatibility-Infrastructure-Debug]
+"Enabled"=dword:00000000  ; Отключает отладку инфраструктуры совместимости
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Application-Experience/Program-Compatibility-Assistant/Analytic]
+"Enabled"=dword:00000000  ; Отключает аналитическую информацию помощника по совместимости
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001  ; Отключает получение метаданных устройств из сети
+
+[HKEY_LOCAL_MACHINE\COMPONENTS\DerivedData\Components\amd64_microsoft-windows-cortana-cortana_31bf3856ad364e35_10.0.10240.16384_none_40ba2ec3d03bceb0]
+"f!proactive-telemetry-inter_58073761d33f144b"=dword:00000000  ; Отключает проактивную телеметрию
+"f!proactive-telemetry-event_8ac43a41e5030538"=dword:00000000  ; Отключает проактивные события телеметрии
+"f!proactive-telemetry.js"=dword:00000000  ; Отключает проактивную телеметрию для JavaScript
+"f!dss-winrt-telemetry.js"=dword:00000000  ; Отключает телеметрию для Windows Runtime
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"CortanaEnabled"=dword:00000000  ; Отключает Cortana для текущего пользователя
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\15.0\osm]
+"enablefileobfuscation"=dword:00000001  ; Включает обфускацию файлов в Office 2013
+"enablelogging"=dword:00000000  ; Отключает ведение журнала в Office 2013
+"enableupload"=dword:00000000  ; Отключает загрузку данных в Office 2013
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\common]
+"qmenable"=dword:00000000  ; Отключает быстрый доступ к меню в Office 2016
+"sendcustomerdata"=dword:00000000  ; Отключает отправку данных о пользователе в Office 2016
+"updatereliabilitydata"=dword:00000000  ; Отключает обновление данных о надежности в Office 2016
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\common\feedback]
+"enabled"=dword:00000000  ; Отключает обратную связь в Office 2016
+"includescreenshot"=dword:00000000  ; Отключает включение скриншотов в обратной связи
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\common\internet]
+"useonlinecontent"=dword:00000000  ; Отключает использование онлайн-контента в Office 2016
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\common\ptwatson]
+"ptwoptin"=dword:00000000  ; Отключает участие в программе Watson в Office 2016
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\osm]
+"enablefileobfuscation"=dword:00000001  ; Включает обфускацию файлов в Office 2016
+"enablelogging"=dword:00000000  ; Отключает ведение журнала в Office 2016
+"enableupload"=dword:00000000  ; Отключает загрузку данных в Office 2016
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\osm\preventedapplications]
+"accesssolution"=dword:00000001  ; Запрещает доступ к приложению Access
+"olksolution"=dword:00000001  ; Запрещает доступ к приложению Outlook
+"onenotesolution"=dword:00000001  ; Запрещает доступ к приложению OneNote
+"pptsolution"=dword:00000001  ; Запрещает доступ к приложению PowerPoint
+"projectsolution"=dword:00000001  ; Запрещает доступ к приложению Project
+"publishersolution"=dword:00000001  ; Запрещает доступ к приложению Publisher
+"visiosolution"=dword:00000001  ; Запрещает доступ к приложению Visio
+"wdsolution"=dword:00000001  ; Запрещает доступ к приложению Word
+"xlsolution"=dword:00000001  ; Запрещает доступ к приложению Excel
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\osm\preventedsolutiontypes]
+"agave"=dword:00000001  ; Запрещает использование Agave
+"appaddins"=dword:00000001  ; Запрещает использование надстроек приложений
+"comaddins"=dword:00000001  ; Запрещает использование COM-надстроек
+"documentfiles"=dword:00000001  ; Запрещает использование файлов документов
+"templatefiles"=dword:00000001  ; Запрещает использование файлов шаблонов
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\excel\security]
+"blockcontentexecutionfrominternet"=dword:00000001  ; Запрещает выполнение контента из Интернета в Excel
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\word\security]
+"blockcontentexecutionfrominternet"=dword:00000001  ; Запрещает выполнение контента из Интернета в Word
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\powerpoint\security]
+"blockcontentexecutionfrominternet"=dword:00000001  ; Запрещает выполнение контента из Интернета в PowerPoint
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\office\16.0\outlook\security]
+"level"=dword:00000002  ; Устанавливает уровень безопасности для Outlook
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\WdiContextLog]
+"Start"=dword:00000000  ; Отключает автозапуск WDI контекстного лога
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\UBPM]
+"Start"=dword:00000000  ; Отключает автозапуск UBPM
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\TCPIPLOGGER]
+"Start"=dword:00000000  ; Отключает автозапуск TCPIP логгера
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\SQMLogger]
+"Start"=dword:00000000  ; Отключает автозапуск SQM логгера
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\ReadyBoot]
+"Start"=dword:00000000  ; Отключает автозапуск ReadyBoot
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\NtfsLog]
+"Start"=dword:00000000  ; Отключает автозапуск NTFS лога
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\LwtNetLog]
+"Start"=dword:00000000  ; Отключает автозапуск LwtNet лога
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\FaceUnlock]
+"Start"=dword:00000000  ; Отключает автозапуск FaceUnlock
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\FaceRecoTel]
+"Start"=dword:00000000  ; Отключает автозапуск FaceRecognitionTelemetry
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\EventLog-System]
+"Start"=dword:00000000  ; Отключает автозапуск системного лога событий
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\EventLog-Security]
+"Start"=dword:00000000  ; Отключает автозапуск лога событий безопасности
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\DefenderAuditLogger]
+"Start"=dword:00000000  ; Отключает автозапуск логгера аудита Defender
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\DefenderApiLogger]
+"Start"=dword:00000000  ; Отключает автозапуск логгера API Defender
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\Circular Kernel Context Logger]
+"Start"=dword:00000000  ; Отключает автозапуск логгера контекста ядра
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\AutoLogger-Diagtrack-Listener]
+"Start"=dword:00000000  ; Отключает автозапуск логгера Diagtrack
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\Audio]
+"Start"=dword:00000000  ; Отключает автозапуск логгера аудио
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Autologger\AppModel]
+"Start"=dword:00000000  ; Отключает автозапуск логгера модели приложений
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Tracing\WPPMediaPerApp\Skype]
+"EnableTracing"=dword:00000000  ; Отключает трассировку для Skype
+"WPPFilePath"="%SYSTEMDRIVE%\\TEMP\\Tracing\\WPPMedia"  ; Указывает путь для файлов трассировки
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Tracing\WPPMediaPerApp\Skype\ETW]
+"TraceLevelThreshold"=dword:00000000  ; Устанавливает уровень трассировки для Skype
+"WPPFilePath"="%SYSTEMDRIVE%\\TEMP\\WPPMedia"  ; Указывает путь для файлов трассировки
+
+; Настройки DirectX для пользовательских предпочтений GPU
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\DirectX\UserGpuPreferences]
+"DirectXUser  GlobalSettings"="VRROptimizeEnable=0;"  ; Отключает оптимизацию VRR для DirectX
+
+; Настройки системы для автоматического перезапуска
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableAutomaticRestartSignOn"=dword:00000001  ; Отключает автоматический перезапуск при входе в систему
+
+; Настройки приоритета процессов
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"IRQ8Priority"=dword:00000001  ; Устанавливает приоритет для IRQ8
+"Win32PrioritySeparation"=dword:00000026  ; Устанавливает приоритеты для процессов Windows
+
+; Отключение патчей Meltdown и Spectre
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"FeatureSettings"=dword:00000001  ; Включает настройки функций
+"FeatureSettingsOverride"=dword:00000003  ; Переопределяет настройки функций
+"FeatureSettingsOverrideMask"=dword:00000003  ; Маска для переопределения настроек функций
+"ClearPageFileAtShutdown"=dword:00000000  ; Не очищает файл подкачки при завершении работы
+"LargeSystemCache"=dword:00000001  ; Включает использование большого системного кэша
+"DisablePagingExecutive"=dword:00000001  ; Отключает разбиение на страницы для системных процессов
+
+; Отключение патча Zombieload v2
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel]
+"DisableTsx"=dword:00000000  ; Отключает поддержку TSX
+
+; Настройки поиска драйверов
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000  ; Отключает поиск драйверов в Windows Update
+
+; Настройки обновлений Windows
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001  ; Исключает драйверы из обновлений качества Windows
+
+; Настройки управления питанием
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001  ; Отключает ограничение мощности для приложений
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000000  ; Отключает режим гибернации
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power]
+"HiberbootEnabled"=dword:00000000  ; Отключает ускоренный запуск (гибернация при загрузке)
+
+; Настройки мультимедиа
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000064  ; Устанавливает отзывчивость системы для мультимедиа
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"GPU Priority"=dword:00000008  ; Устанавливает приоритет GPU для игр
+"Priority"=dword:00000006  ; Устанавливает приоритет для задач игр
+"Scheduling Category"="High"  ; Устанавливает категорию планирования на высокий приоритет
+"SFIO Priority"="High"  ; Устанавливает высокий приоритет для SFIO
+
+; Настройки ImmersiveShell
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell]
+"UseActionCenterExperience"=dword:00000000 ; Отключает использование нового интерфейса Центра уведомлений
+
+; Настройки управления памятью
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"FeatureSettings"=dword:00000001 ; Включает настройки функций управления памятью
+"FeatureSettingsOverride"=dword:00000003 ; Переопределяет настройки функций
+"FeatureSettingsOverrideMask"=dword:00000003 ; Маска для переопределения настроек
+"ClearPageFileAtShutdown"=dword:00000000 ; Отключает очистку файла подкачки при завершении работы
+"LargeSystemCache"=dword:00000001 ; Включает большой системный кэш
+"DisablePagingExecutive"=dword:00000001 ; Отключает постраничную выборку для исполнительного кода
+
+; Настройки поиска драйверов
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000 ; Устанавливает порядок поиска драйверов
+
+; Настройки Windows Update
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001 ; Исключает драйверы из обновлений качества
+
+; Настройки управления питанием
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"HibernateEnabled"=dword:00000000 ; Отключает режим гибернации
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001 ; Отключает ограничение мощности
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"GPU Priority"=dword:00000008 ; Устанавливает приоритет GPU для игр
+"Priority"=dword:00000006 ; Устанавливает приоритет задач для игр
+"Scheduling Category"="High" ; Устанавливает категорию планирования на высокий уровень
+"SFIO Priority"="High" ; Устанавливает приоритет SFIO на высокий уровень
+
+; Настройки ядра
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel]
+"DisableTsx"=dword:00000000 ; Отключает поддержку TSX
+
+; Настройки предварительной загрузки
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters]
+"EnablePrefetcher"=dword:00000000 ; Отключает предварительную загрузку
+"EnableSuperfetch"=dword:00000000 ; Отключает Superfetch
+
+; Настройки приоритета
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"IRQ8Priority"=dword:00000001 ; Устанавливает приоритет IRQ8
+"Win32PrioritySeparation"=dword:00000026 ; Устанавливает разделение приоритета Win32
+
+; Настройки папок
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell]
+"FolderType"="NotSpecified" ; Устанавливает тип папки как не указанный
+
+; Настройки рабочего стола
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="0" ; Устанавливает задержку показа меню на 0
+"JPEGImportQuality"=dword:00000064 ; Устанавливает качество импорта JPEG
+"WaitToKillAppTimeout"="2000" ; Устанавливает тайм-аут ожидания завершения приложения
+"LowLevelHooksTimeout"="1000" ; Устанавливает тайм-аут для низкоуровневых хуков
+
+; Настройки MRT
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001 ; Не предлагать через WUAU
+
+; Настройки Windows Store
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore]
+"AutoDownload"=dword:00000002 ; Устанавливает автоматическую загрузку
+
+; Настройки тайм-аутов
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control]
+"AutoEndTasks"=dword:00000001
+"WaitToKillServiceTimeOut"=dword:0000000a ; Устанавливает тайм-аут ожидания завершения службы
+"HungAppTimeout"="1000"
+
+; Настройки синхронизации
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync]
+"SyncPolicy"=dword:00000005 ; Устанавливает политику синхронизации
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Windows]
+"Enabled"=dword:00000000 ; Отключает синхронизацию настроек Windows
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Credentials]
+"Enabled"=dword:00000000 ; Отключает синхронизацию учетных данных
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Personalization]
+"Enabled"=dword:00000000 ; Отключает синхронизацию персонализации
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\BrowserSettings]
+"Enabled"=dword:00000000 ; Отключает синхронизацию настроек браузера
+
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\SettingSync\Groups\Accessibility]
+"Enabled"=dword:00000000 ; Отключает синхронизацию доступности
+
+; Настройки системы
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System]
+"UploadUser Activities"=dword:00000000 ; Отключает загрузку пользовательской активности
+"PublishUser Activities"=dword:00000000 ; Отключает публикацию пользовательской активности
+
+; Настройки рекламы
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo]
+"Enabled"=dword:00000000 ; Отключает рекламу
+
+; Настройки языковых предпочтений
+[HKEY_CURRENT_USER\Control Panel\International\User Profile]
+"HttpAcceptLanguageOptOut"=dword:00000001 ; Отключает предпочтения языка HTTP
+
+; Настройки сбора данных
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000 ; Отключает телеметрию
+
+; Настройки контекстного меню
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\copy To]
+@="" ; Отключает пункт "Копировать в" в контекстном меню
+
+[HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\Move To]
+@="" ; Отключает пункт "Переместить в" в контекстном меню
+
+; Настройки персонализации
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\InputPersonalization\TrainedDataStore]
+"HarvestContacts"=dword:00000000 ; Отключает сбор контактов
+
+; Настройки поиска
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search]
+"BackgroundAppGlobalToggle"=dword:00000000 ; Отключает фоновый поиск
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoResolveSearch"=dword:00000001 ; Отключает разрешение поиска
+"NoLowDiskSpaceChecks"=dword:00000001 ; Отключает проверки низкого дискового пространства
+"LinkResolveIgnoreLinkInfo"=dword:00000001 ; Игнорирует информацию о ссылках
+
+; Настройки облачных функций
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsConsumerFeatures"=dword:00000001 ; Отключает функции для потребителей Windows
+
+; Настройки служб
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\diagnosticshub.standardcollector.service]
+"Start"=dword:00000004 ; Устанавливает режим запуска службы на отключен
+
+; Настройки диагностики
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack]
+"ShowedToastAtLevel"=dword:00000001 ; Указывает, что уведомление было показано
+
+; Настройки менеджера контента
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager]
+"SoftLandingEnabled"=dword:00000000 ; Отключает мягкую посадку
+"SystemPaneSuggestionsEnabled"=dword:00000000 ; Отключает предложения в системной панели
+"RotatingLockScreenOverlayEnabled"=dword:00000000 ; Отключает вращающиеся обои на экране блокировки
+"RotatingLockScreenEnabled"=dword:00000000 ; Отключает вращающиеся обои на экране блокировки
+
+; Настройки обслуживания
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\Maintenance]
+"MaintenanceDisabled"=dword:00000001 ; Отключает обслуживание
+
+; Настройки фоновых приложений
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\BackgroundAccessApplications]
+"GlobalUser  Disabled"=dword:00000001 ; Отключает фоновый доступ для приложений
+
+; Настройки доступа к местоположению
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location]
+"Value"="Deny" ; Запрещает доступ к местоположению
+
+; Настройки конфиденциальности
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Privacy]
+"TailoredExperiencesWithDiagnosticDataEnabled"=dword:00000000 ; Отключает персонализированные опыты с диагностическими данными
+
+; Настройки транскрипции событий
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\DiagTrack\EventTranscriptKey]
+"EnableEventTranscript"=dword:00000000 ; Отключает транскрипцию событий
+
+; Настройки доступа к информации учетной записи
+[HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\userAccountInformation]
+"Value"="Deny" ; Запрещает доступ к информации учетной записи

@@ -1,0 +1,5 @@
+C:\Windows\System32
+C:\Windows\System32\Wbem
+C:\Windows\System32\WindowsPowerShell\v1.0\
+C:\Windows\SysWOW64
+C:\Users\Mahashe\AppData\Local\Microsoft\WindowsApps
